@@ -17,7 +17,6 @@ class WebViewController: UIViewController, WKScriptMessageHandler {
         super.viewDidLoad()
         view.backgroundColor = UIColor.whiteColor()
         navItem()
-        
         webItem()
         
     }
@@ -62,9 +61,10 @@ class WebViewController: UIViewController, WKScriptMessageHandler {
     
     func userContentController(userContentController: WKUserContentController, didReceiveScriptMessage message: WKScriptMessage) {
         if(message.name == "theHandler") {
-            
+            //Retrieve json data from angular and save it as NSDictionary
             let sentData = message.body as! NSDictionary
             
+            //display data within an alertcontroller
             let alertController = UIAlertController(title: "JS Says", message: "You selected \(sentData.valueForKey("Choice") as! String)", preferredStyle: .Alert)
             let ok = UIAlertAction(title: "OK", style: .Default, handler: { (action) -> Void in
             })
