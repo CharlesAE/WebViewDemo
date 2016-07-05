@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  WebViewDemo
 //
-//  Created by Supa Ram on 7/5/16.
+//  Created by Charles E on 7/5/16.
 //  Copyright © 2016 SR Studios. All rights reserved.
 //
 
@@ -16,6 +16,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        window?.makeKeyAndVisible()
+        
+        let vc = WebViewController()
+        window?.rootViewController = UINavigationController(rootViewController: vc)
+        
+        UINavigationBar.appearance().barTintColor = UIColor.darkGrayColor()
+        
+        // get rid of black bar underneath navbar
+        UINavigationBar.appearance().shadowImage = UIImage()
+        UINavigationBar.appearance().setBackgroundImage(UIImage(), forBarMetrics: .Default)
+        
+        application.statusBarStyle = .LightContent
+        
+        let statusBarBackgroundView = UIView()
+        statusBarBackgroundView.backgroundColor = UIColor.darkGrayColor()
+        
+        window?.addSubview(statusBarBackgroundView)
+        window?.addConstraintsWFormat("H:|[v0]|", views: statusBarBackgroundView)
+        window?.addConstraintsWFormat("V:|[v0(20)]", views: statusBarBackgroundView)
+        
+        
+
         return true
     }
 

@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		BE3C3A091D2C3B83007AD667 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3C3A081D2C3B83007AD667 /* AppDelegate.swift */; };
-		BE3C3A0B1D2C3B83007AD667 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3C3A0A1D2C3B83007AD667 /* ViewController.swift */; };
-		BE3C3A0E1D2C3B83007AD667 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE3C3A0C1D2C3B83007AD667 /* Main.storyboard */; };
 		BE3C3A101D2C3B83007AD667 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE3C3A0F1D2C3B83007AD667 /* Assets.xcassets */; };
 		BE3C3A131D2C3B83007AD667 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE3C3A111D2C3B83007AD667 /* LaunchScreen.storyboard */; };
+		BE3C3A2E1D2C4556007AD667 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3C3A2D1D2C4556007AD667 /* Extensions.swift */; };
+		BE3C3A301D2C4672007AD667 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3C3A2F1D2C4672007AD667 /* WebViewController.swift */; };
+		BE3C3A4A1D2C5025007AD667 /* angular.min.js in Resources */ = {isa = PBXBuildFile; fileRef = BE3C3A441D2C5025007AD667 /* angular.min.js */; };
+		BE3C3A4C1D2C5452007AD667 /* test.js in Resources */ = {isa = PBXBuildFile; fileRef = BE3C3A4B1D2C5452007AD667 /* test.js */; };
+		BE3C3A4E1D2C5458007AD667 /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = BE3C3A4D1D2C5458007AD667 /* test.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BE3C3A051D2C3B83007AD667 /* WebViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE3C3A081D2C3B83007AD667 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BE3C3A0A1D2C3B83007AD667 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BE3C3A0D1D2C3B83007AD667 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BE3C3A0F1D2C3B83007AD667 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE3C3A121D2C3B83007AD667 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE3C3A141D2C3B83007AD667 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE3C3A2D1D2C4556007AD667 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		BE3C3A2F1D2C4672007AD667 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		BE3C3A441D2C5025007AD667 /* angular.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = angular.min.js; sourceTree = "<group>"; };
+		BE3C3A4B1D2C5452007AD667 /* test.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = test.js; sourceTree = "<group>"; };
+		BE3C3A4D1D2C5458007AD667 /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,25 @@
 		BE3C3A071D2C3B83007AD667 /* WebViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				BE3C3A1A1D2C3EC9007AD667 /* web */,
 				BE3C3A081D2C3B83007AD667 /* AppDelegate.swift */,
-				BE3C3A0A1D2C3B83007AD667 /* ViewController.swift */,
-				BE3C3A0C1D2C3B83007AD667 /* Main.storyboard */,
 				BE3C3A0F1D2C3B83007AD667 /* Assets.xcassets */,
 				BE3C3A111D2C3B83007AD667 /* LaunchScreen.storyboard */,
 				BE3C3A141D2C3B83007AD667 /* Info.plist */,
+				BE3C3A2D1D2C4556007AD667 /* Extensions.swift */,
+				BE3C3A2F1D2C4672007AD667 /* WebViewController.swift */,
 			);
 			path = WebViewDemo;
+			sourceTree = "<group>";
+		};
+		BE3C3A1A1D2C3EC9007AD667 /* web */ = {
+			isa = PBXGroup;
+			children = (
+				BE3C3A4B1D2C5452007AD667 /* test.js */,
+				BE3C3A4D1D2C5458007AD667 /* test.html */,
+				BE3C3A441D2C5025007AD667 /* angular.min.js */,
+			);
+			name = web;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,9 +139,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE3C3A4C1D2C5452007AD667 /* test.js in Resources */,
+				BE3C3A4E1D2C5458007AD667 /* test.html in Resources */,
 				BE3C3A131D2C3B83007AD667 /* LaunchScreen.storyboard in Resources */,
+				BE3C3A4A1D2C5025007AD667 /* angular.min.js in Resources */,
 				BE3C3A101D2C3B83007AD667 /* Assets.xcassets in Resources */,
-				BE3C3A0E1D2C3B83007AD667 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,22 +154,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE3C3A0B1D2C3B83007AD667 /* ViewController.swift in Sources */,
+				BE3C3A2E1D2C4556007AD667 /* Extensions.swift in Sources */,
 				BE3C3A091D2C3B83007AD667 /* AppDelegate.swift in Sources */,
+				BE3C3A301D2C4672007AD667 /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		BE3C3A0C1D2C3B83007AD667 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BE3C3A0D1D2C3B83007AD667 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BE3C3A111D2C3B83007AD667 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

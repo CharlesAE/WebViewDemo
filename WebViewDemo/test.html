@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html ng-app="choiceApp">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+
+     <style>
+        body         { padding-top:50px;
+            font-size: 10pt;
+            color:#111111;
+            background-color:#fff;}
+     
+    </style>
+
+
+    <script src="angular.min.js"></script>
+    <script src="test.js"></script>
+</head>
+
+
+<body ng-controller="Controller">
+  
+    <h2>Select An Option</h2>
+    
+    <form>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" name="displayOption" ng-model="formData.displayOption.firstChoice" ng-disabled="formData.displayOption.secondChoice || formData.displayOption.thirdChoice"/> First
+        </label>
+      </div>
+      <br>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" name="displayOption" ng-model="formData.displayOption.secondChoice" ng-disabled="formData.displayOption.firstChoice || formData.displayOption.thirdChoice"/> Second
+        </label>
+      </div>
+      <br>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" name="displayOption" ng-model="formData.displayOption.thirdChoice" ng-disabled="formData.displayOption.secondChoice || formData.displayOption.firstChoice"/> Third
+        </label>
+      </div>
+      <br>
+      <div><button style="background-color: #bdd446" ng-click="sendToSwift()" ng-disabled="!formData.displayOption">Submit</button>
+      </div>
+    </form>
+    
+  </div>    
+</body>
+</html>
